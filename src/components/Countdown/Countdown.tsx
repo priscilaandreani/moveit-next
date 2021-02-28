@@ -6,12 +6,11 @@ import styles from '../../styles/components/Countdown.module.css';
 let countdownTimeout: NodeJS.Timeout;
 
 export function Countdown() {
+ const { startNewChallange, activeChallange } = useContext(ChallangeContext);
 
-  const [time, setTime] = useState(0.1 * 60);
+  const [time, setTime] = useState( 0.1 * 60);
   const [isActive, setIsActive] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
-
-  const { startNewChallange } = useContext(ChallangeContext);
 
 
   const minutes = Math.floor(time / 60);
