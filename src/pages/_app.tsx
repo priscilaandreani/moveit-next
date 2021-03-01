@@ -6,7 +6,7 @@ import '../styles/global.css';
 function MyApp( { Component, pageProps } ) {
   return (
     <ChallangeProvider>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </ChallangeProvider>
   )
 }
