@@ -1,7 +1,4 @@
-## #NLW04: Moveit!
-
-dev_
-@priscilaandreani
+## #NLW04: Moveit
 
 ### tech
 
