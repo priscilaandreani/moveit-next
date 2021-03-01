@@ -24,7 +24,7 @@ interface ChallangeProviderProps {
 
 export const ChallangeContext= createContext({} as ChallangeContextData);
 
-export function ChallangeProvider({ children }): ChallangeProviderProps {
+export function ChallangeProvider({ children }: ChallangeProviderProps) {
 
   const [level, setLevel] = useState(1);
   const [currentExperience, setCurrentExperience] = useState(25);

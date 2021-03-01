@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle, FaPlayCircle, FaTimesCircle } from 'react-icons/fa';
 import { ChallangeContext } from '../../contexts/ChallangeContexts';
 import styles from '../../styles/components/Countdown.module.css';
 
@@ -71,6 +71,7 @@ export function Countdown() {
                 className={`${styles.startCountdownButton} ${styles.stopCountdownButton}`}
                 onClick={resetCountdown}>
                 Abandonar ciclo
+                <FaTimesCircle style={{ color: 'var(--red)', marginLeft: '1rem' }} />
               </button>
             ) : (
                 <button
@@ -78,6 +79,7 @@ export function Countdown() {
                   className={styles.startCountdownButton}
                   onClick={startCountdown}>
                   Inicar um ciclo
+                  <FaPlayCircle style={{ color: 'var(--white)', marginLeft: '1rem' }} />
                 </button>)
             }
           </>

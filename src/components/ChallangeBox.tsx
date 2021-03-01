@@ -34,7 +34,7 @@ export function ChallangeBox() {
         <strong>Finalize um ciclo e receba um novo desafio</strong>
         <p>
           <img src="icons/level-up.svg" alt="Level" />
-          Suba de level completando desafios.
+          Suba de level completando desafios
         </p>
       </div>)}
     </div>
